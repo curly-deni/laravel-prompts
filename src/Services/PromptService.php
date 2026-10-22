@@ -81,7 +81,7 @@ final class PromptService
             $template,
         );
 
-        $rendered = Blade::render($template, $data, deleteCachedView: true);
+        $rendered = Blade::render($template, $data);
 
         return str_replace(
             [$phpTagMarker.'OPEN', $phpTagMarker.'CLOSE'],
